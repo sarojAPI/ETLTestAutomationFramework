@@ -42,3 +42,5 @@ def test_nullValueCheck():
     target_df = pd.read_csv('/Users/sarojdahal/PycharmProjects/ETLTest/people-100.csv', sep=',')
     isFirstNameNull = target_df['First Name'].isnull().any()
     assert isFirstNameNull == False , "First Name is having a NULL value"
+
+
